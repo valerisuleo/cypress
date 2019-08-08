@@ -88,8 +88,8 @@ describe('Actions', () => {
           cy.wrap(td).contains('Jacob')
           .invoke('wrap').parent()
           .contains('Benefit').click();
-      })
-  })
+      });
+  });
 
 
 

@@ -370,10 +370,12 @@ Different applications:
   	...now can do:
   
 	```
-	describe('Actions', () => {
-	  beforeEach(() => {
-	    cy.fixture('keychain').as('user');
-	  })
+      cy.get('.table').find('tr > td')
+      .then((td) => {
+          cy.wrap(td).contains('Jacob')
+          .invoke('wrap').parent()
+          .contains('Benefit').click();
+      });
 	```
 
 
