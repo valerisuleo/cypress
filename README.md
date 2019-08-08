@@ -370,7 +370,7 @@ Different applications:
   ...now can do:
   
 
-	```
+	 ```
 			it('Understanding Cypress Wrap Commands', () => {
 			  cy.get('.table').find('tr > td')
 			  .then((td) => {
@@ -379,7 +379,7 @@ Different applications:
 			      .contains('Benefit').click();
 			  });
 			});
-	```
+	 ```
 
 
 ### Working with Assertions
