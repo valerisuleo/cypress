@@ -438,10 +438,12 @@ This is a powerful tool to pass data from an external file and we can do that in
 	We get our data and make an _alias_. In this way we can access to it from outside just like this:
 
 	```
-	describe('Actions', () => {
-	  beforeEach(() => {
-	    cy.fixture('keychain').as('user');
-	  })
+	    it('Login', () => {
+        cy.get('@user').then((user) => {
+            cy.get('#exampleInputEmail1').type(user.email);
+            cy.get('#exampleInputPassword1').type(user.password);
+        });
+    });
 	```
 
 ## Section 3: Advanced features
