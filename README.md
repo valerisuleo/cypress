@@ -344,13 +344,10 @@ Different applications:
 	  it('Understanding Cypress Wrap Commands', () => {
       cy.wrap({ name: 'Hulk'})
       .should('have.property', 'name').and('eq', 'Hulk');
-  });
-  ```
-
-
+  		});
+  	```
 
 2. Remember when we did...
-
 
 	```
 	  it('Cypress advanced commands', () => {
