@@ -367,7 +367,7 @@ Different applications:
   		})
   	```
 
-  ...now can do:
+  	...now can do:
   
 	```
 	describe('Actions', () => {
