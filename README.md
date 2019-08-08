@@ -371,14 +371,14 @@ Different applications:
   
 
 	```
-		it('Understanding Cypress Wrap Commands', () => {
-		  cy.get('.table').find('tr > td')
-		  .then((td) => {
-		      cy.wrap(td).contains('Jacob')
-		      .invoke('wrap').parent()
-		      .contains('Benefit').click();
-		  });
-		});
+	it('Understanding Cypress Wrap Commands', () => {
+	  cy.get('.table').find('tr > td')
+	  .then((td) => {
+	      cy.wrap(td).contains('Jacob')
+	      .invoke('wrap').parent()
+	      .contains('Benefit').click();
+	  });
+	});
 	```
 
 ### Working with Assertions
