@@ -437,7 +437,12 @@ This is a powerful tool to pass data from an external file and we can do that in
 
 	We get our data and make an _alias_. In this way we can access to it from outside just like this:
 
-
+	```
+	describe('Actions', () => {
+	  beforeEach(() => {
+	    cy.fixture('keychain').as('user');
+	  })
+	```
 
 ## Section 3: Advanced features
 
