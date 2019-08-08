@@ -347,7 +347,10 @@ Different applications:
   });
   ```
 
+
+
 2. Remember when we did...
+
 
 	```
 	  it('Cypress advanced commands', () => {
