@@ -364,8 +364,8 @@ Different applications:
 
       // get its associated Benefit and then click
       .contains('Benefit').click();
-  })
-  ```
+  		})
+  	```
 
   ...now can do:
   
