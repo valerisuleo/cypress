@@ -1,4 +1,3 @@
-/// <reference types="Cypress" />
 
 
 describe('Actions', () => {
@@ -8,7 +7,7 @@ describe('Actions', () => {
     })
 
     it('Login', () => {
-        cy.get('@user').then((user) => {
+        cy.get('@user').then((user: any) => {
             cy.get('#exampleInputEmail1').type(user.email);
             cy.get('#exampleInputPassword1').type(user.password);
         });

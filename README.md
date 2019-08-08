@@ -446,3 +446,18 @@ This is a powerful tool to pass data from an external file and we can do that in
 ## Section 3: Advanced features
 
 ### Custom commands
+
+Cy comes with its own API for creating custom commands and overwriting existing commands.
+
+_custom commands are a great place to define or override commands in your_ `cypress/support/command.js` _file since it is loaded before any test files are evaluated via an import statement_ in `cypress/support/index.js`
+
+#### Synthax
+
+```
+Cypress.Commands.add(name, callbackFn)
+Cypress.Commands.add(name, options, callbackFn)
+Cypress.Commands.overwrite(name, callbackFn)
+Cypress.Commands.overwrite(name, options, callbackFn)
+```
+
+
