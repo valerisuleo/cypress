@@ -1,5 +1,4 @@
 
-
 describe('Actions', () => {
     beforeEach(() => {
         cy.visit('http://localhost:4200/home');
