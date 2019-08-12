@@ -461,3 +461,25 @@ Cypress.Commands.overwrite(name, options, callbackFn)
 ```
 
 
+## Section 5: Automating Applications with XHR
+
+### Introduction to working with XHR
+
+_XMLHttpRequest (XHR) is an API in the form of an object whose methods transfer data between a web browser and a web server. The object is provided by the browser's JavaScript environment. Particularly, retrieval of data from XHR for the purpose of continually modifying a loaded web page is the underlying concept of Ajax design. Despite the name, XHR can be used with protocols other than HTTP and data can be in the form of not only XML,[1] but also JSON,[2] HTML or plain text.[3]_ - **Source: Wikipedia**
+
+Cypress provide you access direct to the XHR obj, enabling you to make assertions about its properties. Additionally you can even stub and mock a request's response.
+
+##### Don’t Stub Responses
+
+By not stubbing your responses, you are writing true end-to-end tests. This means you are driving your application the same way a real user would. These typically include user login, signup, or other critical paths such as billing.
+
+> How to start XHR?
+
+- Start the server `cy.server()`;
+- Start a routing
+
+### Working with XHR and asserting using explicit assertion
+
+> **Note:** For this particular lesson I built a `MEANapp` so you might need to install few things before starting.
+
+

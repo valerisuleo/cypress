@@ -1,0 +1,14 @@
+<h1>
+  async works!
+</h1>
+
+<button type="button" name="button" class="network-btn"
+(click)="index()">Get Comments</button>
+
+<div *ngIf="is404">
+  <h3>error</h3>
+</div>
+
+<ul class="lis-container">
+  <li *ngFor="let item of all">{{ item.name }}</li>
+</ul>
