@@ -8,8 +8,8 @@ import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
 	{ path: 'login', component: LoginComponent},
-	{ path: 'home', component: AsyncComponent},
-	// { path: 'home', component: AsyncComponent, canActivate: [AuthGuard]},
+	// { path: 'home', component: AsyncComponent},
+	{ path: 'home', component: AsyncComponent, canActivate: [AuthGuard]},
 	{ path: '**', redirectTo: 'home' }
 ];
 

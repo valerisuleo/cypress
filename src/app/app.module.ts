@@ -15,7 +15,7 @@ import { uiRouter } from './app.routes';
 import { AuthGuard } from './auth.guard';
 
 export function tokenGetter() {
-  console.log(localStorage.getItem('access_token'));
+  // console.log(localStorage.getItem('access_token'));
   return localStorage.getItem('access_token');
 }
 

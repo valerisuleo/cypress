@@ -10,23 +10,22 @@ import { first } from 'rxjs/operators';
 })
 export class LoginComponent implements OnInit {
 
-  public username: string;
+  public email: string;
   public password: string;
   public error: string;
-  login = {};
 
   constructor(private auth: AuthService, private router: Router) { }
 
   public submit() {
   const vm = this;
 
-  vm.auth.login(vm.username, vm.password)
+  vm.auth.login(vm.email, vm.password)
   .pipe(first())
   .subscribe(
     result => vm.router.navigate(['/home']),
     err => vm.error = 'Could not authenticate'
   );
-  console.log('vm', vm);
+  // console.log('vm', vm);
 }
   ngOnInit() {
   }

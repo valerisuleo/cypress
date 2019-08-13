@@ -1,0 +1,22 @@
+{
+  "name": "bird-api",
+  "description": "Bird App Homework",
+  "main": "server.js",
+  "authors": [
+    "alexpchin <alex@alexchin.co.uk>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-ui-router": "^0.4.2",
+    "angular-resource": "^1.6.3"
+  }
+}

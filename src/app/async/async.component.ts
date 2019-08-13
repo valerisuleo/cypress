@@ -11,12 +11,6 @@ export class AsyncComponent implements OnInit {
   all: any[];
   is404 = false;
 
-
-  headers = new Headers({
-    'Content-Type': 'application/json',
-    'Authorization': `Bearer ${localStorage.getItem('access_token')}`
-  })
-
   constructor(private service: ApiService) {}
 
   index() {
@@ -25,10 +19,10 @@ export class AsyncComponent implements OnInit {
     vm.service.getAll()
     .subscribe((response) => {
       vm.all = response.json();
-      console.log(vm.all);
+      // console.log(vm.all);
     }, error => {
-      if (error.status === 404) {
-          this.is404 = true;
+      if (error) {
+          vm.is404 = true;
       }
 
     });

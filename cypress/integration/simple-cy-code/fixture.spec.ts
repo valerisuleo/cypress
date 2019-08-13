@@ -1,7 +1,7 @@
 
 describe('Actions', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:4200/home');
+        cy.visit('http://localhost:4200/login');
         cy.fixture('keychain').as('user');
     })
 

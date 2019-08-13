@@ -1,0 +1,20 @@
+<form ng-submit="birdsEdit.update()">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" ng-model="birdsEdit.bird.name">
+  </div>
+  <div>
+    <label for="latinName">Latin Name</label>
+    <input type="text" name="latinName" id="latinName" ng-model="birdsEdit.bird.latinName">
+  </div>
+  <div>
+    <label for="family">Family</label>
+    <input type="text" name="family" id="family" ng-model="birdsEdit.bird.family">
+  </div>
+  <div>
+    <label for="image">Image</label>
+    <input type="text" name="image" id="image" ng-model="birdsEdit.bird.image">
+  </div>
+
+  <button>Update</button>
+</form>

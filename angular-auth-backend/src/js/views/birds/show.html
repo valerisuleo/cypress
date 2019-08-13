@@ -1,0 +1,7 @@
+<img ng-src="{{ birdsShow.bird.image }}">
+
+<h2>{{ birdsShow.bird.name }}</h2>
+<p><strong>{{ birdsShow.bird.latinName }}</strong> <em>{{ birdsShow.bird.family }}</em></p>
+
+<a ui-sref="birdsEdit({ id: birdsShow.bird.id })">Edit</a>
+<button ng-click="birdsShow.delete()">Delete</button>

@@ -1,0 +1,20 @@
+<form ng-submit="birdsNew.create()">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" ng-model="birdsNew.bird.name">
+  </div>
+  <div>
+    <label for="latinName">Latin Name</label>
+    <input type="text" name="latinName" id="latinName" ng-model="birdsNew.bird.latinName">
+  </div>
+  <div>
+    <label for="family">Family</label>
+    <input type="text" name="family" id="family" ng-model="birdsNew.bird.family">
+  </div>
+  <div>
+    <label for="image">Image</label>
+    <input type="text" name="image" id="image" ng-model="birdsNew.bird.image">
+  </div>
+
+  <button>Create</button>
+</form>

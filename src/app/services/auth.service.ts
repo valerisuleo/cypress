@@ -8,14 +8,13 @@ import { map } from 'rxjs/operators';
 export class AuthService {
   constructor(private http: HttpClient) { }
 
-  login(username: string, password: string): Observable<boolean> {
+  login(email: string, password: string): Observable<boolean> {
     return this.http
-    .post<{token: string}>('http://localhost:4000/api/login', {username: username, password: password})
+    .post<{token: string}>('http://localhost:4000/api/login', {email: email, password: password})
       .pipe(
         map(result => {
-          console.log('result', result);
           localStorage.setItem('access_token', result.token);
-          console.log('result.token', result.token);
+          // console.log('result.token', result.token);
           return true;
         })
       );
