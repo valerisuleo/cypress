@@ -153,6 +153,8 @@ Each event listener has specific arguments:
 
 ### Cypress advanced commands
 
+
+
 We are going to discuss some of the most common cypress commands
 
 - `visit()`
